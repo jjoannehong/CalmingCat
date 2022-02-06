@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+@keyframes background {
+  0% {background-color: #161B1E;
+  cursor: none;}
+
+  100% {background-color: #FfffFF;cursor: default;}
+
+  
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.body {
+  animation-name: background;
+  background-color: #161B1E;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  animation-iteration-count: 1;
+  animation-delay: 18s;
+  animation-duration: 3s;
+  position: fixed;
+  margin: none;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  cursor: none;
+  z-index: -1;
+}
+
+.intro {
+  font-family: Zen Old Mincho;
+  position: fixed;
+  font-weight: 900;
+  font-size: 40px;
+  color: #D2E1EA;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: none;
+  padding: 0px;
+  height: 100vh;
+  animation-delay: 3s;
+  animation-name: fadeOutUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeOutUp{
+  from {
+      opacity: 1;
+      transform: translateY(0);
+   }
+   to {
+      opacity: 0;
+      transform: translateY(-30px);
+}}
+
+.inhale {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  font-size: 45px;
+  display: flex;
+   opacity: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  line-height: 80%;
+  flex-direction: column;
+  color: #161B1E;
+  width: 100vw;
+  margin: none;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  height: 100vh;
+  animation-name: fadeInOut;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-fill-mode:forwards;
+  z-index: 4;
+}
+.hold {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  font-size: 45px;
+  display: flex;
+   opacity: 0;
+   z-index: 3;
+   top: 0;
+  left: 0;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #161B1E;
+  animation-name: fadeInOut;
+  animation-delay: 9s;
+  animation-duration: 6s;
+  margin: none;
+  padding: 0px;
+  animation-fill-mode:forwards;
+}
+
+.exhale {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  font-size: 45px;
+  display: flex;
+   opacity: 0;
+  position: absolute;
+    line-height: 80%;
+    top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #161B1E;
+  animation-name: fadeInOut;
+  animation-delay: 15s;
+  animation-duration: 6s;
+  margin: none;
+  z-index: 2;
+  padding: 0px;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeInOut{
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  
+  }
+  100% {
+    opacity: 0;
+    display: none;
+
+}}
+
+@keyframes fadeInUp{
+  from {
+      opacity: 0;
+  
+      transform: translateY(20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0px);
+}
+}
+.subDirect {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.circleDiv {
+  padding: 0px;
+  margin:0px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.circle {
+  position: fixed;
+  background-color: #C5D7E3;
+  border-radius: 50%;
+  z-index: 1;
+  animation-name: circle;
+  animation-duration: 25s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+   opacity: 0;
+   filter: blur(10px);
+}
+
+.circle2 {
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+  animation-name: circleTwo;
+  animation-duration: 9s;
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+   opacity: 0;
+   filter: blur(50px);
+
+}
+
+@keyframes circle{
+  0% {
+    opacity: 0;
+    width: 500px;
+  height: 500px;
+  }
+  10% {opacity: 0.7;}
+  22% {
+    opacity: 1;
+    width: 300px;
+  height: 300px;}
+
+  40% {
+    opacity: 1;
+  width: 300px;
+  height: 300px;}
+  50% {opacity: 0.9;}
+  60% {opacity: 0.7;}
+  80% {
+    opacity: 0;
+    width: 150vw;
+    height:150vw;
+  }
+  81% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.tempBody {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes circleTwo {
+  0% {
+    opacity: 0;
+    width: 150px;
+  height: 150px;
+  }
+  10% {opacity: 0.8;}
+  99% {opacity: 1;
+  width: 200vw;
+  height: 200vw;}
+  100% {opacity: 0; display: none;}
+}
+
+.logo{
+  font-family: Zen Old Mincho;
+  color: #A0BDCF;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 15px;
+  transition: 0.3s;
+  animation-name: fadeInUp;
+  animation-delay:22s;
+  animation-duration: 2s;
+
+  animation-fill-mode: forwards;
+  opacity: 0;
+  z-index: 6;
+}
+
+.logo:hover {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cat1 {
+  z-index: 7;
+  margin-bottom: 10px;
+  object-fit: contain;
+  height: 40vh;
+  min-height: 200px;
+}
+
+.smallCat {
+  object-fit: contain;
+  height: 30vh;
+  min-height: 50px;
+}
+
+.caption1 {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  color: #A0BDCF;
+  font-size: 24px;
+  text-align: center;
+}
+
+.captionS {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  color: #A0BDCF;
+  font-size: 24px;
+  text-align: center;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.captionL {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  color: #A0BDCF;
+  font-size: 30px;
+  text-align: center;
+   animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-top: 30px;
+}
+
+.captionD {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  color: #7E929F;
+  font-size: 30px;
+  text-align: center;
+   animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-bottom: 30px;
+}
+
+.captionL1 {
+  font-family: Zen Old Mincho;
+  font-weight: 700;
+  color: #A0BDCF;
+  font-size: 30px;
+  text-align: center;
+   animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+#introDiv {
+  position: fixed;
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+  animation-delay: 22s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+  width: 50%;
+  z-index: 7;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+#fname {
+  width: 300px;
+  margin-top: 30px;
+  align-self: center;
+  border: none;
+  border-bottom: #161B1E solid 2.6px;
+  padding-bottom: 4px;
+  height: 30px;
+  font-family: Karla;
+  font-weight: 500;
+  font-size: 32px;
+  outline: none;
+  color: #161B1E;
+}
+
+.click2C {
+  font-family: Karla;
+  font-weight: 500;
+  font-size: 32px;
+  color: #161B1E;
+  margin-top: 20px;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.click2C:hover {
+  color: #91B2C7;
+}
+
+#fname:active {
+  outline:none;
+}
+
+
+
+::placeholder {
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ACBAC3;
+}
+
+#arrow1 {
+  width: 50px;
+  object-fit: contain;
+  transition: 0.4s;
+}
+
+.arrow2 {
+  width: 50px;
+  object-fit: contain;
+  transition: 0.4s;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-top: 20px;
+}
+
+.arrow2:hover {
+  width: 55px;
+  cursor: pointer;
+}
+
+#arrow1:hover {
+  width: 55px;
+  cursor: pointer;
+}
+
+.submitBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+
+
+
+
+
+button {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  padding: none;
+  margin: none;
+}
+
+.basicbody {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.greybody {
+  background-color: #CDD5DA;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.darkbody {
+  background-color: #DCE8F0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+
+.basiclogo{
+  font-family: Zen Old Mincho;
+  color: #A0BDCF;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 15px;
+  transition: 0.3s;
+  z-index: 7;
+}
+
+.basiclogo:hover {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.darklogo{
+  font-family: Zen Old Mincho;
+  color: #7E929F;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 15px;
+  transition: 0.3s;
+  z-index: 7;
+}
+
+.darklogo:hover {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+.basicdiv {
+  position: fixed;
+  width: 50%;
+  z-index: 5;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.yesNo {
+  margin: 15px;
+  margin-top: 30px;
+  font-family: Karla;
+  font-weight: 700;
+  color: #161B1E;
+  font-size: 28px;
+  transition: 0.4s;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+   animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.yesNo:hover {
+  color: #91B2C7;
+}
+
+.shirts {
+  display: flex;
+  width: 70%;
+  min-width: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 16vw;
+  min-height: 100px;
+}
+
+.shirt {
+  height: 15vw;
+  min-height: 100px;
+  object-fit: contain;
+  transition: 0.4s;
+}
+
+.bowl {
+  height: 14vw;
+  min-height: 80px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.broken {
+  height: 20vw;
+  min-height: 100px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+
+.shirt:hover {
+  cursor: pointer;
+  height: 16vw;
+}
+
+.leftCat {
+  display: flex;
+  width: 70%;
+  min-width: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.scavHunt {
+  object-fit: contain;
+  width: 1000px;
+  margin: 20px;
+  
+}
+
+
+.disNone {
+  display:none;
+}
+
+.preHug {
+  z-index: 7;
+  margin-bottom: 10px;
+  object-fit: contain;
+  height: 40vh;
+  min-height: 200px;
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: absolute;
+  align-self: center;
+}
+
+
+.Hug {
+  z-index: 7;
+  position: absolute;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.city {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  align-self: center;
+  position: absolute;
+  opacity: 0;
+}
+
+
+
+.preCity {
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: absolute;
+  align-self: center;
+  
+}
+
+.preCrowd {
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: absolute;
+  align-self: center;
+}
+
+.crowd {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  align-self: center;
+  position: absolute;
+  opacity: 0;
+}
+
+.crowdCon {
+  object-fit: contain;
+  min-width: 700px;
+  width: 70vw;
+}
+
+.crowdCon1 {
+  object-fit: contain;
+  min-height: 300px;
+  height: 60vh;
+}
+
+.imgPos {
+  position: absolute;
+  top: 60%;
+  left: 52%;
+}
+
+area {
+  outline: none
+}
